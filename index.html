@@ -97,12 +97,9 @@
       <!-- /Hero Section -->
 
       <!-- Featured Services Section -->
-      <section
-        id="featured-services"
-        class="featured-services section light-background"
-      >
+      <section id="featured-services" class="featured-services">
         <div class="container">
-          <div class="row gy-4">
+          <div class="row">
             <div
               class="col-xl-4 col-lg-6"
               data-aos="fade-up"
@@ -172,7 +169,7 @@
       <!-- /Featured Services Section -->
 
       <!-- Product Section -->
-      <section id="product" class="product section">
+      <section id="product" class="product light-background">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Produk</h2>
@@ -181,130 +178,235 @@
           </p>
         </div>
         <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-4 mb-3 mb-md-0">
-              <div class="card product-card border-0 rounded-4 shadow-sm">
-                <div class="position-relative">
-                  <span class="badge bg-danger badge-custom">Baru</span>
-                  <div class="overflow-hidden">
-                    <img
-                      src="assets/img/product-1.png"
-                      class="card-img-top product-image"
-                      alt="Product Image"
-                    />
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card product-card border-0 shadow-sm">
+                  <div class="position-relative">
+                    <span class="badge bg-danger badge-custom">Baru</span>
+                    <div class="overflow-hidden">
+                      <img
+                        src="assets/img/product-1.png"
+                        class="card-img-top product-image"
+                        alt="Product Image"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="card-body p-4 mb-3 mb-md-0">
-                  <h5 class="card-title mb-3 fw-bold">Baby Coco Fresh Carve</h5>
-                  <p class="card-text text-muted mb-4">
-                    Kelapa muda utuh tanpa kulit, dengan ukiran dan logo
-                    eksklusif yang siap disajikan.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span class="price">Rp. 30.000</span>
-                    <a
-                      href="https://wa.me/6281991631838"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  <div class="card-body p-4">
+                    <p class="card-title mb-2">Baby Coco Cone Cut</p>
+                    <p class="card-text text-muted mb-4">
+                      Kelapa muda utuh dengan potongan kerucut rapi dan ukiran
+                      logo eksklusif, siap disajikan dengan elegan.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      <button
-                        class="btn btn-custom text-white px-4 py-2 rounded-pill"
+                      <span class="price">IDR. 15.000</span>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Pesan Sekarang
-                      </button>
-                    </a>
+                        <button
+                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-              <div class="card product-card border-0 rounded-4 shadow-sm">
-                <div class="position-relative">
-                  <span class="badge bg-danger badge-custom">Baru</span>
-                  <div class="overflow-hidden">
-                    <img
-                      src="assets/img/product-2.png"
-                      class="card-img-top product-image"
-                      alt="Product Image"
-                    />
+              <!-- End product card -->
+              <div class="swiper-slide">
+                <div class="card product-card border-0 rounded-4 shadow-sm">
+                  <div class="position-relative">
+                    <span class="badge bg-danger badge-custom">Baru</span>
+                    <div class="overflow-hidden">
+                      <img
+                        src="assets/img/product-2.png"
+                        class="card-img-top product-image"
+                        alt="Product Image"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="card-body p-4">
-                  <h5 class="card-title mb-3 fw-bold">
-                    Baby Coco Natural Carve
-                  </h5>
-                  <p class="card-text text-muted mb-4">
-                    Kelapa muda utuh lengkap dengan kulit, dihiasi ukiran dan
-                    logo khas, tampil alami dan unik.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span class="price">Rp. 25.000</span>
-                    <a
-                      href="https://wa.me/6281991631838"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  <div class="card-body p-4">
+                    <p class="card-title mb-2">Baby Coco Diamond Cut</p>
+                    <p class="card-text text-muted mb-4">
+                      Kelapa muda dengan potongan menyerupai berlian yang unik,
+                      memberikan kesan premium dan menarik.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      <button
-                        class="btn btn-custom text-white px-4 py-2 rounded-pill"
+                      <span class="price">IDR. 16.000</span>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Pesan Sekarang
-                      </button>
-                    </a>
+                        <button
+                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card product-card border-0 rounded-4 shadow-sm">
-                <div class="position-relative">
-                  <span class="badge bg-danger badge-custom">Baru</span>
-                  <div class="overflow-hidden">
-                    <img
-                      src="assets/img/product-3.png"
-                      class="card-img-top product-image"
-                      alt="Product Image"
-                    />
+              <!-- End product card -->
+              <div class="swiper-slide">
+                <div class="card product-card border-0 rounded-4 shadow-sm">
+                  <div class="position-relative">
+                    <span class="badge bg-danger badge-custom">Baru</span>
+                    <div class="overflow-hidden">
+                      <img
+                        src="assets/img/product-3.png"
+                        class="card-img-top product-image"
+                        alt="Product Image"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="card-body p-4">
-                  <h5 class="card-title mb-3 fw-bold">Baby Coco Pure Drink</h5>
-                  <p class="card-text text-muted mb-4">
-                    Air kelapa muda murni dalam kemasan praktis, tanpa tambahan
-                    apa pun segar langsung dari alam.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span class="price">Rp. 15.000</span>
-                    <a
-                      href="https://wa.me/6281991631838"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  <div class="card-body p-4">
+                    <p class="card-title mb-2">Baby Coco Screw Cap Style</p>
+                    <p class="card-text text-muted mb-4">
+                      Kelapa muda dengan tutup ulir praktis yang menjaga
+                      kesegaran dan memudahkan konsumsi.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      <button
-                        class="btn btn-custom text-white px-4 py-2 rounded-pill"
+                      <span class="price">IDR. 21.000</span>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Pesan Sekarang
-                      </button>
-                    </a>
+                        <button
+                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- End product card -->
+              <div class="swiper-slide">
+                <div class="card product-card border-0 rounded-4 shadow-sm">
+                  <div class="position-relative">
+                    <span class="badge bg-danger badge-custom">Baru</span>
+                    <div class="overflow-hidden">
+                      <img
+                        src="assets/img/product-1.png"
+                        class="card-img-top product-image"
+                        alt="Product Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body p-4">
+                    <p class="card-title mb-2">Baby Coco Cork Cap Style</p>
+                    <p class="card-text text-muted mb-4">
+                      Kelapa muda dengan penutup gabus alami yang memberikan
+                      sentuhan tradisional dan estetik.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span class="price">IDR. 21.000</span>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
+              <div class="swiper-slide">
+                <div class="card product-card border-0 rounded-4 shadow-sm">
+                  <div class="position-relative">
+                    <span class="badge bg-danger badge-custom">Baru</span>
+                    <div class="overflow-hidden">
+                      <img
+                        src="assets/img/product-1.png"
+                        class="card-img-top product-image"
+                        alt="Product Image"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body p-4">
+                    <p class="card-title mb-2">Baby Coco Pull-Tab Style</p>
+                    <p class="card-text text-muted mb-4">
+                      Kelapa muda modern dengan sistem buka tarik yang higienis
+                      dan sangat praktis disajikan.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span class="price">IDR. 23.000</span>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
+      <!-- /Products  Section -->
 
       <!-- About Section -->
-      <section id="about" class="about section">
+      <section id="about" class="about">
         <div class="container">
-          <div class="row gy-4">
+          <div class="row">
             <div
               class="col-lg-6 content"
               data-aos="fade-up"
@@ -312,7 +414,7 @@
             >
               <p class="who-we-are">Apa yang membedakan?</p>
               <h3>Baby Coco - Sensasi Kesegaran Kelapa Muda</h3>
-              <p class="fst-italic">
+              <p>
                 Terbuat dari kelapa muda berkualitas tinggi, Baby Coco
                 menghadirkan pengalaman baru dalam menikmati kelapa dengan cita
                 rasa manis alami yang menyegarkan.
@@ -372,7 +474,7 @@
       <!-- /About Section -->
 
       <!-- Features Section -->
-      <section id="features" class="features section">
+      <section id="features" class="features">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Keunggulan</h2>
@@ -445,17 +547,17 @@
             <div class="col-lg-6">
               <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
                 <div class="tab-pane fade active show" id="features-tab-1">
-                  <img src="assets/img/tabs-1.png" alt="" class="img-fluid" />
+                  <img src="assets/img/tabs-1.webp" alt="" class="img-fluid" />
                 </div>
                 <!-- End Tab Content Item -->
 
                 <div class="tab-pane fade" id="features-tab-2">
-                  <img src="assets/img/tabs-2.png" alt="" class="img-fluid" />
+                  <img src="assets/img/tabs-2.webp" alt="" class="img-fluid" />
                 </div>
                 <!-- End Tab Content Item -->
 
                 <div class="tab-pane fade" id="features-tab-3">
-                  <img src="assets/img/tabs-3.png" alt="" class="img-fluid" />
+                  <img src="assets/img/tabs-3.webp" alt="" class="img-fluid" />
                 </div>
                 <!-- End Tab Content Item -->
               </div>
@@ -466,7 +568,7 @@
       <!-- /Features Section -->
 
       <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials section light-background">
+      <section id="testimonials" class="testimonials light-background">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Testimoni</h2>
@@ -619,7 +721,7 @@
       <!-- /Testimonials Section -->
 
       <!-- Contact Section -->
-      <section id="contact" class="contact section">
+      <section id="contact" class="contact">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Kontak</h2>

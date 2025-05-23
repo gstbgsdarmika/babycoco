@@ -626,12 +626,11 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
-section,
-.section {
+section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 100px;
+  padding: 40px 0;
+  scroll-margin-top: 80px;
   overflow: clip;
 }
 
@@ -642,20 +641,27 @@ section,
   }
 }
 
+@media (max-width: 640px) {
+  section {
+    padding-top: 20px 0;
+    scroll-margin-top: 40px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -673,7 +679,22 @@ section,
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    padding-bottom: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .section-title p {
+    margin-bottom: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -681,14 +702,12 @@ section,
 --------------------------------------------------------------*/
 .hero {
   position: relative;
-  height: 70vh;
+  height: 75vh;
   overflow: hidden;
 }
 
 .hero-bg {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -724,18 +743,13 @@ section,
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    max-height: 60vh;
-  }
-}
-
 @media (max-width: 640px) {
   .hero {
-    max-height: 60vh;
+    max-height: 50vh;
   }
 
   .hero h1 {
+    margin-top: 40px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -745,8 +759,7 @@ section,
     line-height: 24px;
   }
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
+  .hero .btn-get-started {
     font-size: 13px;
   }
 }
@@ -754,13 +767,8 @@ section,
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
-.featured-services {
-  padding: 20px 0;
-}
-
 .featured-services .service-item {
   position: relative;
-  padding-top: 20px;
 }
 
 .featured-services .service-item .icon {
@@ -785,7 +793,7 @@ section,
 
 .featured-services .service-item .title {
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-size: 18px;
 }
 
@@ -812,15 +820,7 @@ section,
 /*--------------------------------------------------------------
 # Product Section
 --------------------------------------------------------------*/
-.product .product-item {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
-  padding: 40px 40px;
-  height: 100%;
-  border-radius: 15px;
-}
-
 .product h3 {
-  font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -828,9 +828,8 @@ section,
 .product h4 {
   color: var(--accent-color);
   font-size: 48px;
-  font-weight: 700;
   font-family: var(--heading-font);
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 
 .product h4 sup {
@@ -843,94 +842,24 @@ section,
   font-weight: 500;
 }
 
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--default-color);
+}
+
 .product .description {
   font-size: 14px;
-}
-
-.product .cta-btn {
-  border: 1px solid var(--default-color);
-  color: var(--default-color);
-  display: block;
-  text-align: center;
-  padding: 10px 35px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-
-.product .cta-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.product ul {
-  padding: 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.product ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.product ul li:last-child {
-  padding-bottom: 0;
-}
-
-.product ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.product ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.product ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.product ul .na span {
-  text-decoration: line-through;
-}
-
-.product .featured {
-  position: relative;
-}
-
-.product .featured .popular {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 4px 15px 6px 15px;
-  margin: 0;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.product .featured .cta-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
 }
 
 .product-card {
   transition: all 0.3s ease;
   overflow: hidden;
   cursor: pointer;
+  box-sizing: content-box;
+  margin: auto 8px;
+  text-align: justify;
+  transition: 0.3s;
 }
 
 .product-card:hover {
@@ -958,7 +887,7 @@ section,
 .price {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--default-color);
 }
 
 .btn-custom {
@@ -972,32 +901,44 @@ section,
   border: none;
 }
 
-@media (max-width: 992px) {
-  .product .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
+.product .swiper-wrapper {
+  height: auto;
 }
 
-@media (max-width: 767px) {
+.product .swiper-pagination {
+  margin-top: 40px;
+  position: relative;
+}
+
+.product .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.product .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 640px) {
   .product .box {
     max-width: 80%;
-    margin: 0 auto 30px auto;
+  }
+
+  .card-body span {
+    font-size: 22px;
+  }
+
+  .card-body .btn-custom {
+    font-size: 14px;
   }
 }
-
-@media (max-width: 420px) {
-  .product .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
-}
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about {
-  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .about .content .who-we-are {
@@ -1030,39 +971,27 @@ section,
   margin-bottom: 0;
 }
 
-.about .content .read-more {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 12px 24px;
-  border-radius: 5px;
-  transition: 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .content .read-more i {
-  font-size: 18px;
-  margin-left: 5px;
-  line-height: 0;
-  transition: 0.3s;
-}
-
-.about .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  padding-right: 19px;
-}
-
-.about .content .read-more:hover i {
-  margin-left: 10px;
-}
-
 .about .about-images img {
   border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .about .content .who-we-are {
+    margin-bottom: 10px;
+  }
+
+  .about .content h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .about .content ul i {
+    font-size: 1rem;
+  }
+
+  .about .about-images img {
+    border-radius: 8px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1074,7 +1003,7 @@ section,
 
 .features .nav-item {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .features .nav-item:last-child {
@@ -1131,9 +1060,28 @@ section,
   border-radius: 15px;
 }
 
+@media (max-width: 640px) {
+  .features .nav-item {
+    margin-bottom: 5px;
+  }
+
+  .features .nav-link {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .tab-content {
+    margin-top: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials {
+  margin-top: 20px;
+}
+
 .testimonials .testimonial-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
