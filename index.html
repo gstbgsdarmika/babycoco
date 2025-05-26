@@ -60,9 +60,9 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html#hero" class="active">Beranda</a></li>
-            <li><a href="index.html#product">Produk</a></li>
             <li><a href="index.html#about">Tentang Kami</a></li>
-            <li><a href="index.html#features">Keunggulan</a></li>
+            <li><a href="index.html#product">Produk</a></li>
+            <li><a href="index.html#superiority">Keunggulan</a></li>
             <li><a href="index.html#contact">Kontak</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -85,12 +85,15 @@
         class="hero d-flex align-items-center justify-content-center text-center"
       >
         <div class="hero-bg">
-          <img src="assets/img/3.webp" alt="background" class="bg-image" />
+          <img src="assets/img/hero.webp" alt="background" class="bg-image" />
         </div>
         <div class="hero-content text-white">
-          <h1 data-aos="fade-up">Segar & Alami <span>Baby Coco</span></h1>
+          <h1 data-aos="fade-up">
+            Fresh, Pure & Effortless <span>Baby Coco</span>
+          </h1>
           <p data-aos="fade-up" data-aos-delay="100">
-            Minuman sehat, rasa manis alami, tanpa repot.<br />
+            Minuman sehat dengan rasa manis alami, dikemas praktis dan
+            higienis.<br />
           </p>
         </div>
       </section>
@@ -105,16 +108,15 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div class="service-item d-flex">
+              <div class="service-item d-flex align-items-center">
                 <div class="icon flex-shrink-0">
                   <i class="bi bi-patch-check"></i>
                 </div>
                 <div>
-                  <h4 class="title">
-                    <p class="stretched-link">Praktis & Higienis</p>
-                  </h4>
-                  <p class="description">
-                    Desain modern, higienis, dan mudah dinikmati kapan saja.
+                  <h2 class="title mb-1">Kelapa Pilihan</h2>
+                  <p class="description mb-0">
+                    Kelapa muda pilihan dari Negara (Jembrana) dan Bangli Bali,
+                    tumbuh di alam yang segar dan bersih.
                   </p>
                 </div>
               </div>
@@ -124,18 +126,17 @@
             <div
               class="col-xl-4 col-lg-6"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="100"
             >
-              <div class="service-item d-flex">
+              <div class="service-item d-flex align-items-center">
                 <div class="icon flex-shrink-0">
                   <i class="bi bi-flower1"></i>
                 </div>
                 <div>
-                  <h4 class="title">
-                    <p class="stretched-link">100% Natural</p>
-                  </h4>
-                  <p class="description">
-                    Rasa manis alami yang menyegarkan & tanpa tambahan apapun.
+                  <h2 class="title mb-1">100% Rasa Manis Alami</h2>
+                  <p class="description mb-0">
+                    Nikmati kesegaran manis alami kelapa tanpa bahan tambahan
+                    atau pemanis buatan.
                   </p>
                 </div>
               </div>
@@ -145,19 +146,17 @@
             <div
               class="col-xl-4 col-lg-6"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="100"
             >
-              <div class="service-item d-flex">
+              <div class="service-item d-flex align-items-center">
                 <div class="icon flex-shrink-0">
                   <i class="bi bi-droplet"></i>
                 </div>
                 <div>
-                  <h4 class="title">
-                    <p class="stretched-link">Asli Bali</p>
-                  </h4>
-                  <p class="description">
-                    Kelapa muda pilihan yang tumbuh di alam segar Bali. Rasa
-                    asli, dari pulau dewata.
+                  <h2 class="title mb-1">Kesegaran Tahan Lama</h2>
+                  <p class="description mb-0">
+                    Produk Baby Coco tetap segar dan berkualitas hingga 1 minggu
+                    setelah pengemasan.
                   </p>
                 </div>
               </div>
@@ -168,269 +167,35 @@
       </section>
       <!-- /Featured Services Section -->
 
-      <!-- Product Section -->
-      <section id="product" class="product light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Produk</h2>
-          <p>
-            Tersedia dalam berbagai varian segar yang siap dinikmati kapan saja.
-          </p>
-        </div>
-        <!-- End Section Title -->
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 40
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 1
-                  }
-                }
-              }
-            </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card product-card border-0 shadow-sm">
-                  <div class="position-relative">
-                    <span class="badge bg-danger badge-custom">Baru</span>
-                    <div class="overflow-hidden">
-                      <img
-                        src="assets/img/product-1.png"
-                        class="card-img-top product-image"
-                        alt="Product Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body p-4">
-                    <p class="card-title mb-2">Baby Coco Cone Cut</p>
-                    <p class="card-text text-muted mb-4">
-                      Kelapa muda utuh dengan potongan kerucut rapi dan ukiran
-                      logo eksklusif, siap disajikan dengan elegan.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <span class="price">IDR. 15.000</span>
-                      <a
-                        href="https://wa.me/6281991631838"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
-                        >
-                          Pesan Sekarang
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End product card -->
-              <div class="swiper-slide">
-                <div class="card product-card border-0 rounded-4 shadow-sm">
-                  <div class="position-relative">
-                    <span class="badge bg-danger badge-custom">Baru</span>
-                    <div class="overflow-hidden">
-                      <img
-                        src="assets/img/product-2.png"
-                        class="card-img-top product-image"
-                        alt="Product Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body p-4">
-                    <p class="card-title mb-2">Baby Coco Diamond Cut</p>
-                    <p class="card-text text-muted mb-4">
-                      Kelapa muda dengan potongan menyerupai berlian yang unik,
-                      memberikan kesan premium dan menarik.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <span class="price">IDR. 16.000</span>
-                      <a
-                        href="https://wa.me/6281991631838"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
-                        >
-                          Pesan Sekarang
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End product card -->
-              <div class="swiper-slide">
-                <div class="card product-card border-0 rounded-4 shadow-sm">
-                  <div class="position-relative">
-                    <span class="badge bg-danger badge-custom">Baru</span>
-                    <div class="overflow-hidden">
-                      <img
-                        src="assets/img/product-3.png"
-                        class="card-img-top product-image"
-                        alt="Product Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body p-4">
-                    <p class="card-title mb-2">Baby Coco Screw Cap Style</p>
-                    <p class="card-text text-muted mb-4">
-                      Kelapa muda dengan tutup ulir praktis yang menjaga
-                      kesegaran dan memudahkan konsumsi.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <span class="price">IDR. 21.000</span>
-                      <a
-                        href="https://wa.me/6281991631838"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
-                        >
-                          Pesan Sekarang
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End product card -->
-              <div class="swiper-slide">
-                <div class="card product-card border-0 rounded-4 shadow-sm">
-                  <div class="position-relative">
-                    <span class="badge bg-danger badge-custom">Baru</span>
-                    <div class="overflow-hidden">
-                      <img
-                        src="assets/img/product-1.png"
-                        class="card-img-top product-image"
-                        alt="Product Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body p-4">
-                    <p class="card-title mb-2">Baby Coco Cork Cap Style</p>
-                    <p class="card-text text-muted mb-4">
-                      Kelapa muda dengan penutup gabus alami yang memberikan
-                      sentuhan tradisional dan estetik.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <span class="price">IDR. 21.000</span>
-                      <a
-                        href="https://wa.me/6281991631838"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
-                        >
-                          Pesan Sekarang
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End product card -->
-              <div class="swiper-slide">
-                <div class="card product-card border-0 rounded-4 shadow-sm">
-                  <div class="position-relative">
-                    <span class="badge bg-danger badge-custom">Baru</span>
-                    <div class="overflow-hidden">
-                      <img
-                        src="assets/img/product-1.png"
-                        class="card-img-top product-image"
-                        alt="Product Image"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-body p-4">
-                    <p class="card-title mb-2">Baby Coco Pull-Tab Style</p>
-                    <p class="card-text text-muted mb-4">
-                      Kelapa muda modern dengan sistem buka tarik yang higienis
-                      dan sangat praktis disajikan.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <span class="price">IDR. 23.000</span>
-                      <a
-                        href="https://wa.me/6281991631838"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button
-                          class="btn btn-custom text-white px-3 py-2 rounded-pill"
-                        >
-                          Pesan Sekarang
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End product card -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- /Products  Section -->
-
       <!-- About Section -->
       <section id="about" class="about">
         <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-6 content"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <p class="who-we-are">Apa yang membedakan?</p>
-              <h3>Baby Coco - Sensasi Kesegaran Kelapa Muda</h3>
-              <p>
-                Terbuat dari kelapa muda berkualitas tinggi, Baby Coco
-                menghadirkan pengalaman baru dalam menikmati kelapa dengan cita
-                rasa manis alami yang menyegarkan.
+              <h3 class="title">
+                Baby Coco - Sensasi Kesegaran Kelapa Muda Premium Bali
+              </h3>
+              <p class="text-justify">
+                Berasal dari Bali, kelapa muda dikemas dengan berbagai varian.
+                Baby Coco bukan hanya minuman kelapa muda, tetapi ini pengalaman
+                baru menikmati kesegaran alami, dalam bentuk yang siap diminum
+                dan kekinian. Berasal dari Bali, dikemas dengan gaya. Baby Coco
+                bukan hanya minuman kelapa muda—ini pengalaman baru menikmati
+                kesegaran alami, dalam bentuk yang siap diminum dan dibagikan.
               </p>
-              <ul>
+              <ul class="about-list">
                 <li>
                   <i class="bi bi-check-circle"></i>
-                  <span>Rasa manis alami tanpa tambahan apa pun.</span>
+                  <span>100% alami & segar</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle"></i>
-                  <span>Kemasan Ring Pull Tap praktis dan higienis.</span>
+                  <span>Cocok untuk event, hampers, dan lifestyle sehat</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle"></i>
-                  <span>Dipetik dari kelapa pilihan di Bali.</span>
+                  <span>Dipanen langsung dari kebun terbaik di Bali</span>
                 </li>
               </ul>
             </div>
@@ -473,99 +238,507 @@
       </section>
       <!-- /About Section -->
 
-      <!-- Features Section -->
-      <section id="features" class="features">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Keunggulan</h2>
-          <p>
-            Kelapa muda dengan kemasan modern dan cita rasa tropis alami dari
-            Bali.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-lg-5 d-flex align-items-center">
-              <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active show"
-                    data-bs-toggle="tab"
-                    data-bs-target="#features-tab-1"
-                  >
-                    <i class="bi bi-shield-check"></i>
-                    <div>
-                      <h4 class="d-none d-lg-block">Praktis & Higienis</h4>
-                      <p>
-                        Cukup tarik Ring Pull Tap dan langsung nikmati segarnya
-                        kelapa muda tanpa ribet! Desain modern, higienis, dan
-                        mudah dinikmati kapan saja.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#features-tab-2"
-                  >
-                    <i class="bi bi-droplet"></i>
-                    <div>
-                      <h4 class="d-none d-lg-block">100% Natural</h4>
-                      <p>
-                        Terbuat dari kelapa muda berkualitas tinggi, Baby Coco
-                        hadir dengan rasa manis alami yang menyegarkan — tanpa
-                        tambahan apapun.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#features-tab-3"
-                  >
-                    <i class="bi bi-geo-alt"></i>
-                    <div>
-                      <h4 class="d-none d-lg-block">Asli Bali</h4>
-                      <p>
-                        Dibuat dari kelapa muda pilihan yang tumbuh di alam
-                        segar Penebel (Tabanan) dan Negara (Jembrana), Bali.
-                        Rasa asli, dari pulau dewata.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Tab Nav -->
-            </div>
-
-            <div class="col-lg-6">
-              <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-                <div class="tab-pane fade active show" id="features-tab-1">
-                  <img src="assets/img/tabs-1.webp" alt="" class="img-fluid" />
-                </div>
-                <!-- End Tab Content Item -->
-
-                <div class="tab-pane fade" id="features-tab-2">
-                  <img src="assets/img/tabs-2.webp" alt="" class="img-fluid" />
-                </div>
-                <!-- End Tab Content Item -->
-
-                <div class="tab-pane fade" id="features-tab-3">
-                  <img src="assets/img/tabs-3.webp" alt="" class="img-fluid" />
-                </div>
-                <!-- End Tab Content Item -->
+      <!-- Clients Section -->
+      <section id="clients" class="clients section">
+        <div class="container" data-aos="fade-up">
+          <div class="row swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 5,
+                    "spaceBetween": 60
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide client-logo">
+                <img
+                  src="assets/img/clients/client-1.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide client-logo">
+                <img
+                  src="assets/img/clients/client-2.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide client-logo">
+                <img
+                  src="assets/img/clients/client-3.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide client-logo">
+                <img
+                  src="assets/img/clients/client-4.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide client-logo">
+                <img
+                  src="assets/img/clients/client-5.webp"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Features Section -->
+      <!-- /Clients Section -->
+
+      <!-- Product Section -->
+      <section id="product" class="product light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Produk</h2>
+          <p class="custom-max-width mx-auto text-center">
+            Setiap varian Baby Coco dirancang dengan kualitas terbaik untuk
+            menjaga kesegaran dan cita rasa alami kelapa muda yang menyehatkan.
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 30
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card product-card border-0">
+                  <img src="assets/img/produk/1.webp" class="product-image" />
+                  <div class="card-body">
+                    <h5 class="card-title">Baby Coco Cone Cut</h5>
+                    <p class="card-text">
+                      Kelapa muda segar dengan potongan kerucut yang ikonik.
+                      Desain minimalis yang memudahkan dinikmati kapan saja.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="price">IDR. 15.000</div>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
+
+              <div class="swiper-slide">
+                <div class="card product-card border-0">
+                  <img src="assets/img/produk/2.webp" class="product-image" />
+                  <div class="card-body">
+                    <h5 class="card-title">Baby Coco Diamond Cut</h5>
+                    <p class="card-text">
+                      Dengan potongan berbentuk berlian yang unik, Baby Coco ini
+                      bukan cuma segar, tapi juga instagramable!
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="price">IDR. 16.000</div>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
+
+              <div class="swiper-slide">
+                <div class="card product-card border-0">
+                  <img src="assets/img/produk/3.webp" class="product-image" />
+                  <div class="card-body">
+                    <h5 class="card-title">Baby Coco Screw Cap Style</h5>
+                    <p class="card-text">
+                      Inovasi modern dalam kemasan kelapa muda. Dilengkapi tutup
+                      ulir yang bisa dibuka-tutup, menjaga kesegaran lebih lama.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="price">IDR. 21.000</div>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
+
+              <div class="swiper-slide">
+                <div class="card product-card border-0">
+                  <span class="badge bg-danger badge-custom">Baru</span>
+                  <img src="assets/img/produk/4.webp" class="product-image" />
+                  <div class="card-body">
+                    <h5 class="card-title">Baby Coco Cork Cap Style</h5>
+                    <p class="card-text">
+                      Pembuka tutup alami untuk kamu yang cinta bumi. Sentuhan
+                      kayu yang estetik sekaligus ramah lingkungan pas untuk
+                      acara bernuansa alami atau gift eksklusif.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="price">IDR. 21.000</div>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
+
+              <div class="swiper-slide">
+                <div class="card product-card border-0">
+                  <span class="badge bg-danger badge-custom">Baru</span>
+                  <img src="assets/img/produk/5.webp" class="product-image" />
+                  <div class="card-body">
+                    <h5 class="card-title">Baby Coco Pull-Tab Style</h5>
+                    <p class="card-text">
+                      Kelapa muda dengan sistem buka tarik yang mudah, cepat,
+                      dan stylish. Seperti kaleng minuman, tapi 100% alami.
+                      Cocok untuk pesta, event, dan lifestyle modern.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="price">IDR. 23.000</div>
+                      <a
+                        href="https://wa.me/6281991631838"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button
+                          class="btn-custom text-white px-3 py-2 rounded-pill"
+                        >
+                          Pesan Sekarang
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product card -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Products  Section -->
+
+      <!-- Superiority Section -->
+      <section id="superiority" class="superiority">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Pilihan Tepat untuk Setiap Momen</h2>
+          <p class="custom-max-width mx-auto text-center">
+            Setiap varian Baby Coco punya cara buka yang unik dan cocok untuk
+            momen berbeda dan selalu siap menyegarkan suasana.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="swiper init-swiper">
+            <!-- Swiper Configuration -->
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "spaceBetween": 20,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "grid": {
+                      "rows": 1
+                    }
+                  },
+                  "768": {
+                    "slidesPerView": 2,
+                    "grid": {
+                      "rows": 2,
+                      "fill": "row"
+                    }
+                  }
+                }
+              }
+            </script>
+
+            <!-- Swiper Slides -->
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="tutorial-item align-items-center p-4 rounded-3 shadow-sm"
+                >
+                  <i class="bi bi-cone"></i>
+                  <div>
+                    <h4>Baby Coco Cone Cut</h4>
+                    <p class="text-justify">
+                      Cukup gunakan sedotan atau potong bagian atasnya. Cocok
+                      untuk suasana elegan seperti wedding buffet, event
+                      outdoor, hingga acara adat Bali yang autentik.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="tutorial-item align-items-center p-4 rounded-3 shadow-sm"
+                >
+                  <i class="bi bi-gem"></i>
+                  <div>
+                    <h4>Baby Coco Diamond Cut</h4>
+                    <p class="text-justify">
+                      Menawarkan kemudahan dengan potongan atas atau sedotan
+                      langsung, dengan tampilan lebih eksklusif. Pilihan tepat
+                      untuk hampers maupun prewedding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="tutorial-item align-items-center p-4 rounded-3 shadow-sm"
+                >
+                  <i class="bi bi-asterisk"></i>
+                  <div>
+                    <h4>Baby Coco Screw Cap Style</h4>
+                    <p class="text-justify">
+                      Tinggal diputar tutupnya searah jarum jam, dan ditutup
+                      kembali. Cocok menemani aktivitas sehari-hari dari travel
+                      & road trip atau acara kantor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div
+                  class="tutorial-item align-items-center p-4 rounded-3 shadow-sm"
+                >
+                  <i class="bi bi-bandaid"></i>
+                  <div>
+                    <h4>Baby Coco Cork Cap Style</h4>
+                    <p class="text-justify">
+                      Membawa sentuhan alami dengan tutup kayu yang bisa ditarik
+                      perlahan ke atas, menghadirkan kesan estetik sekaligus
+                      ramah lingkungan. Sangat ideal untuk hampers, eco-wedding
+                      yang hijau, souvenir corporate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div
+                  class="tutorial-item align-items-center p-4 rounded-3 shadow-sm"
+                >
+                  <i class="bi bi-flower2"></i>
+                  <div>
+                    <h4>Baby Coco Pull-Tab Style</h4>
+                    <p class="text-justify">
+                      Menggunakan ring seperti kaleng soda yang tinggal ditarik,
+                      siap diminum kapan saja. Cocok untuk korser, event
+                      kuliner, bazzar beach party, dan pesta ulang tahun
+                      kekinian.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Superiority Section -->
+
+      <!-- Faq Section -->
+      <section id="faq" class="faq section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-container">
+                <div class="faq-item">
+                  <h3>Apa keunggulan Baby Coco?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Kelapa muda kecil dengan tutup inovatif yang mudah dibuka
+                      dan cocok untuk segala acara dari wedding sampai outdoor
+                      party.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Berapa lama Baby Coco tahan?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Simpan di kulkas, tetap segar hingga 5-7 hari sebelum
+                      dibuka. Setelah dibuka, varian screw cap bisa ditutup lagi
+                      dan diminum dalam 1 hari.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Apakah Baby Coco siap diminum langsung?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Yap! Tinggal buka sesuai tutupnya—sedotan, potong atas,
+                      putar, atau tarik ring—langsung segar dinikmati.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Apakah mengandung pengawet atau gula tambahan?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Tidak! 100% alami, tanpa pengawet dan gula tambahan. Hanya
+                      kesegaran air kelapa asli dari Bali.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Tutup mana yang praktis untuk dibawa?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Screw Cap Style paling praktis, bisa ditutup kembali dan
+                      mudah dibawa kemana saja.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Cocok untuk acara apa saja?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Semua acara! Dari pesta mewah, event kantor, festival,
+                      sampai hangout santai.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+              </div>
+            </div>
+            <!-- End Faq Column-->
+          </div>
+        </div>
+      </section>
+      <!-- /Faq Section -->
 
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials light-background">
@@ -622,12 +795,12 @@
                   </p>
                   <div class="profile mt-auto">
                     <img
-                      src="assets/img/testimonials/4.png"
+                      src="assets/img/testimonials/pari.png"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Rizky Pratama</h3>
-                    <h4>Jakarta</h4>
+                    <h3>Wayan Pari</h3>
+                    <h4>Manager Taman Safari Bali</h4>
                   </div>
                 </div>
               </div>
@@ -649,12 +822,12 @@
                   </p>
                   <div class="profile mt-auto">
                     <img
-                      src="assets/img/testimonials/3.png"
+                      src="assets/img/testimonials/budi.png"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Made Arya</h3>
-                    <h4>Gianyar</h4>
+                    <h3>Budhi Antara</h3>
+                    <h4>Pekerjaaan Swasta</h4>
                   </div>
                 </div>
               </div>
@@ -676,12 +849,12 @@
                   </p>
                   <div class="profile mt-auto">
                     <img
-                      src="assets/img/testimonials/1.png"
+                      src="assets/img/testimonials/meilda.png"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Sara Clara</h3>
-                    <h4>Bandung</h4>
+                    <h3>Meilda</h3>
+                    <h4>Owner Warung Kecil Bali</h4>
                   </div>
                 </div>
               </div>
@@ -703,12 +876,12 @@
                   </p>
                   <div class="profile mt-auto">
                     <img
-                      src="assets/img/testimonials/2.png"
+                      src="assets/img/testimonials/rita.png"
                       class="testimonial-img"
                       alt=""
                     />
-                    <h3>Luh Astuti</h3>
-                    <h4>Badung</h4>
+                    <h3>Rita</h3>
+                    <h4>Pekerjaaan Swasta</h4>
                   </div>
                 </div>
               </div>
@@ -733,7 +906,7 @@
         <!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
+          <div class="row gy-4 align-items-stretch">
             <div class="col-lg-6">
               <div
                 class="info-item d-flex flex-column justify-content-center align-items-center p-4"
@@ -742,10 +915,14 @@
               >
                 <i class="bi bi-geo-alt"></i>
                 <h3>Alamat</h3>
-                <p>
-                  Jl. Danau Tondano Iv Gg. Mangga Manis Kel. Sanur, Kec.
-                  Denpasar Selatan
-                </p>
+                <a
+                  class="contact"
+                  href="https://www.google.com/maps?q=Jl.+Danau+Tondano+Iv+Gg.+Mangga+Manis+Kel.+Sanur,+Kec.+Denpasar+Selatan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Jl. Danau Tondano Iv Gg. Mangga Manis Kel. Sanur, Kec.
+                  Denpasar Selatan</a
+                >
               </div>
             </div>
             <!-- End Info Item -->
@@ -758,7 +935,13 @@
               >
                 <i class="bi bi-telephone"></i>
                 <h3>Kontak Kami</h3>
-                <p>+62 81991631838</p>
+                <a
+                  class="btn-getstarted"
+                  href="https://wa.me/6281991631838"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >+62 81991631838</a
+                >
               </div>
             </div>
             <!-- End Info Item -->
@@ -771,7 +954,14 @@
               >
                 <i class="bi bi-envelope"></i>
                 <h3>Email</h3>
-                <p>babycoco@gmail.com</p>
+                <a
+                  class="btn-getstarted"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=babycoco@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  babycoco@gmail.com
+                </a>
               </div>
             </div>
             <!-- End Info Item -->
