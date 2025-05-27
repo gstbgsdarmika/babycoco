@@ -908,8 +908,6 @@ section {
 --------------------------------------------------------------*/
 .swiper-wrapper .client-logo img {
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
   max-height: 100px;
   width: auto;
   display: block;
@@ -1045,14 +1043,9 @@ section {
 /*--------------------------------------------------------------
 # Superiority Section
 --------------------------------------------------------------*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
-  gap: 20px;
-}
-
 .tutorial-item {
   background: color-mix(in srgb, var(--accent-color), transparent 96%);
+  height: 200px;
   color: var(--default-color);
   border: 0;
   transition: 0.3s;
@@ -1091,14 +1084,9 @@ section {
 }
 
 @media (max-width: 640px) {
-  .grid-container {
-    display: block;
+  .tutorial-item {
+    height: 200px;
   }
-
-  .grid-container .item {
-    margin-bottom: 20px;
-  }
-
   .tutorial-item .text-justify {
     text-align: justify;
     font-size: 14px;
