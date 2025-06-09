@@ -535,6 +535,25 @@ h6 {
   font-size: 13px;
 }
 
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -904,28 +923,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients Section
---------------------------------------------------------------*/
-.swiper-wrapper .client-logo img {
-  transition: 0.3s;
-  max-height: 100px;
-  width: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.clients .client-logo img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    max-height: 100px;
-  }
-}
-
-/*--------------------------------------------------------------
 # Product Section
 --------------------------------------------------------------*/
 .product-card {
@@ -967,6 +964,7 @@ section {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
+  margin-bottom: 12px;
   color: var(--default-color);
 }
 
@@ -975,6 +973,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0%;
+  height: 110px;
   color: var(--default-color);
 }
 
