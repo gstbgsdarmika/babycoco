@@ -920,11 +920,6 @@ section {
   .about .about-list span {
     font-size: 14px;
   }
-
-  .about .about-images img {
-    border-radius: 10px;
-    object-fit: cover;
-  }
 }
 
 /*--------------------------------------------------------------
